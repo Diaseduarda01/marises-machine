@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <nav id="nav_navegador">
+        <h1 class="h1_titulo">Conversor Machine</h1>
+    </nav>
+
+    <br><br><br><br>
+
+    <!-- Decimal para Binário -->
+    <div class="div_decimal_para_binario">
+        <input id="id_decimal_para_binario" type="text" placeholder="Digite o valor em decimal">
+        <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
+        <div id="demo4" style="display:none;"></div>
+        <button onclick="converter()">Converter</button>
+    </div>
+
+    <br><br>
+    
+    <!-- Decimal para Octal -->
+    <div class="div_decimal_para_octal">
+        <input id="id_decimal_para_octal" type="text" placeholder="Digite o valor em decimal">
+        <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+        <div id="demo2" style="display:none;"></div>
+        <button onclick="converter()">Converter</button>
+    </div>
+
+    <br><br>
+
+    <!-- Decimal para Hexadecimal -->
+    <div class="div_decimal_para_hexa">
+        <input id="id_decimal_para_hexa" type="text" placeholder="Digite o valor em decimal">
+        <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
+        <div id="demo3" style="display:none;"></div>
+        <button onclick="converter()">Converter</button>
+    </div>
+
+    <br>
+
+</body>
+
+</html>
+<script src="main.js"></script>
