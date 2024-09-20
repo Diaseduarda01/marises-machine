@@ -11,41 +11,80 @@
 </head>
 
 <body>
-    <nav id="nav_navegador">
-        <h1 class="h1_titulo">Conversor Machine</h1>
-    </nav>
+    <div class="div_cor_fundo">
+        <nav id="nav_navegador">
+            <div class="sidebar-options left-options">
+                <a href="#">Decimal</a>
+                <a href="#">Octal</a>
+            </div>
 
-    <br><br><br><br>
+            <h1 class="h1_titulo">Conversor Machine</h1>
 
-    <!-- Decimal para Binário -->
-    <div class="div_decimal_para_binario">
-        <input id="id_decimal_para_binario" type="text" placeholder="Digite o valor em decimal">
-        <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
-        <div id="demo4" style="display:none;"></div>
-        <button onclick="converter()">Converter</button>
+            <div class="sidebar-options right-options">
+                <a href="#">Binário</a>
+                <a href="hexadecimal.html">Hexadecimal</a>
+            </div>
+        </nav>
+        <div class="txt">
+
+            <h1>Binário é o caminho da luz</h1>
+        </div>
+        <div class="main-container">
+
+            <!-- Coluna da esquerda: Cards de conversão -->
+            <div class="converter-section">
+                <div class="div_card">
+                    <h2> Decimal para binário</h2>
+                    <input id="id_decimal_para_binario" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_bin" style="display:none;"></div>
+                    <button onclick="converterParaBinario()">Converter</button>
+                </div>
+
+                <br><br>
+
+                <div class="div_card">
+                    <h2> Decimal para octal</h2>
+                    <input id="id_decimal_para_octal" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_octal" style="display:none;"></div>
+                    <button onclick="converterParaOctal()">Converter</button>
+                </div>
+
+                <br><br>
+
+                <div class="div_card">
+                    <h2> Decimal para hexadecimal</h2>
+                    <input id="id_decimal_para_hexa" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_hexa" style="display:none;"></div>
+                    <button onclick="converterParaHexa()">Converter</button>
+                </div>
+            </div>
+
+            <!-- Coluna da direita: Explicações -->
+            <div class="explanation-section">
+                <div class="card">
+                    <h2>Como funciona a conversão binária</h2>
+                    <p>A conversão de decimal para binário é feita dividindo o número por 2 repetidamente até o
+                        quociente
+                        ser 0.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Como funciona a conversão octal</h2>
+                    <p>A conversão de decimal para octal é realizada dividindo o número por 8, obtendo os restos.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Como funciona a conversão hexadecimal</h2>
+                    <p>A conversão de decimal para hexadecimal utiliza a base 16, representando números com dígitos de 0
+                        a 9
+                        e letras de A a F.</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <br><br>
-    
-    <!-- Decimal para Octal -->
-    <div class="div_decimal_para_octal">
-        <input id="id_decimal_para_octal" type="text" placeholder="Digite o valor em decimal">
-        <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
-        <div id="demo2" style="display:none;"></div>
-        <button onclick="converter()">Converter</button>
-    </div>
-
-    <br><br>
-
-    <!-- Decimal para Hexadecimal -->
-    <div class="div_decimal_para_hexa">
-        <input id="id_decimal_para_hexa" type="text" placeholder="Digite o valor em decimal">
-        <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
-        <div id="demo3" style="display:none;"></div>
-        <button onclick="converter()">Converter</button>
-    </div>
-
-    <br>
+    <footer id="rodape">
+        <p>&copy; 2024 - Maria Eduarda Dias e Ana Karoline. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 
