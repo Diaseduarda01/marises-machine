@@ -4,31 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            width: 100%;
-            height: 100%;
-            --s: 200px;
-            /* control the size */
-            --c1: #1d1d1d;
-            --c2: #4e4f51;
-            --c3: #3c3c3c;
-
-            background: repeating-conic-gradient(from 30deg,
-                    #0000 0 120deg,
-                    var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
-                repeating-conic-gradient(from 30deg,
-                    var(--c1) 0 60deg,
-                    var(--c2) 0 120deg,
-                    var(--c3) 0 180deg);
-            background-size: var(--s) calc(var(--s) * 0.577);
-        }
-    </style>
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
+    <div class="div_cor_fundo">
+        <nav id="nav_navegador">
+            <div class="ui-btn-container">
+                <a class="ui-btn" href="index.html"><span>Decimal</span></a>
+                <a class="ui-btn" href="octal.html"><span>Octal</span></a>
+            </div>
+        
+            <h1 class="h1_titulo">Conversor Machine</h1>
+        
+            <div class="ui-btn-container">
+                <a class="ui-btn" href="binario.html"><span>Binário</span></a>
+                <a class="ui-btn" href="hexadecimal.html"><span>Hexadecimal</span></a>
+            </div>
+        </nav>
+        <div class="txt">
+
+            <h1>Binário é o caminho da luz</h1>
+            <h4>Conversor de Hexadecimal para outras bases</h4>
+        </div>
+        <div class="main-container">
+
+            <!-- Coluna da esquerda: Cards de conversão -->
+            <div class="converter-section">
+                <div class="div_card">
+                    <h2>  Hexadecimal  para binário</h2>
+                    <input id="id_decimal_para_binario" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_bin" style="display:none;"></div>
+                    <button onclick="converterParaBinario()">Converter</button>
+                </div>
+
+                <br><br>
+
+                <div class="div_card">
+                    <h2>  Hexadecimal  para octal</h2>
+                    <input id="id_decimal_para_octal" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_octal" style="display:none;"></div>
+                    <button onclick="converterParaOctal()">Converter</button>
+                </div>
+
+                <br><br>
+
+                <div class="div_card">
+                    <h2> Hexadecimal para decimal </h2>
+                    <input id="id_decimal_para_hexa" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_hexa" style="display:none;"></div>
+                    <button onclick="converterParaHexa()">Converter</button>
+                </div>
+            </div>
+
+            <!-- Coluna da direita: Explicações -->
+            <div class="explanation-section">
+                <div class="card">
+                    <h2>Como funciona a conversão hexadecimal para binário</h2>
+                    <p>A conversão de hexadecimal para binário é feita convertendo cada dígito hexadecimal em seu equivalente binário de 4 bits.</p>
+                </div>
+            
+                <div class="card">
+                    <h2>Como funciona a conversão hexadecimal para decimal</h2>
+                    <p>Para converter hexadecimal para decimal, multiplica-se cada dígito do número hexadecimal pelo seu valor posicional (16^n) e soma-se os resultados. Por exemplo, o hexadecimal 2A é calculado como (2 × 16^1) + (10 × 16^0) = 32 + 10 = 42.</p>
+                </div>
+            
+                <div class="card">
+                    <h2>Como funciona a conversão hexadecimal para octal</h2>
+                    <p>Para converter hexadecimal para octal, primeiro converte-se o hexadecimal para decimal e, em seguida, o decimal para octal.</p>
+                </div>
+            </div>
+    </div>
+    <footer id="rodape">
+        <p>&copy; 2024 - Maria Eduarda Dias e Ana Karoline. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 
 </html>
+<script src="main.js"></script>

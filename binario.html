@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-    oi
+    <div class="div_cor_fundo">
+        <nav id="nav_navegador">
+            <div class="ui-btn-container">
+                <a class="ui-btn" href="index.html"><span>Decimal</span></a>
+                <a class="ui-btn" href="octal.html"><span>Octal</span></a>
+            </div>
+        
+            <h1 class="h1_titulo">Conversor Machine</h1>
+        
+            <div class="ui-btn-container">
+                <a class="ui-btn" href="binario.html"><span>Binário</span></a>
+                <a class="ui-btn" href="hexadecimal.html"><span>Hexadecimal</span></a>
+            </div>
+        </nav>
+        <div class="txt">
+
+            <h1>Binário é o caminho da luz</h1>
+            <h4>Conversor de Binário para outras bases</h4>
+        </div>
+        <div class="main-container">
+
+            <!-- Coluna da esquerda: Cards de conversão -->
+            <div class="converter-section">
+                <div class="div_card">
+                    <h2> Binário para decimal </h2>
+                    <input id="id_binário_para_decimal" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_decimal" style="display:none;"></div>
+                    <button onclick="converterParaBinario()">Converter</button>
+                </div>
+
+                <br><br>
+
+                <div class="div_card">
+                    <h2> Binário para octal</h2>
+                    <input id="id_binário_para_octal" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_octal" style="display:none;"></div>
+                    <button onclick="converterParaOctal()">Converter</button>
+                </div>
+
+                <br><br>
+
+                <div class="div_card">
+                    <h2> Binário para hexadecimal</h2>
+                    <input id="id_binário_para_hexa" type="text" placeholder="Digite o valor em decimal">
+                    <div id="div_exibir_hexa" style="display:none;"></div>
+                    <button onclick="converterParaHexa()">Converter</button>
+                </div>
+            </div>
+
+            <!-- Coluna da direita: Explicações -->
+            <div class="explanation-section">
+                <div class="card">
+                    <h2>Como funciona a conversão binária</h2>
+                    <p>A conversão de decimal para binário é feita dividindo o número por 2 repetidamente. Os restos obtidos, lidos de baixo para cima, formam o número binário.</p>
+                </div>
+            
+                <div class="card">
+                    <h2>Como funciona a conversão octal</h2>
+                    <p>A conversão de decimal para octal é realizada dividindo o número por 8. Os restos obtidos, lidos de baixo para cima, formam o número octal.</p>
+                </div>
+            
+                <div class="card">
+                    <h2>Como funciona a conversão hexadecimal</h2>
+                    <p>A conversão de decimal para hexadecimal usa a base 16. Os números são representados com dígitos de 0 a 9 e letras de A a F, com cada dígito representando um valor de 0 a 15.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="rodape">
+        <p>&copy; 2024 - Maria Eduarda Dias e Ana Karoline. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
+
 </html>
+<script src="main.js"></script>
