@@ -431,3 +431,183 @@ html {
         padding: 20px 10px;
     }
 }
+
+/* From Uiverse.io by adamgiebl */ 
+.converterParaHexa {
+  background: #0d0c0e;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #070708;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.converterParaHexa .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #0b0a0b;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.converterParaHexa:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.converterParaHexa .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #18161b;
+}
+
+.converterParaHexa:hover .icon svg {
+  transform: translateX(0.05em);
+}
+
+.converterParaHexa:active .icon {
+  transform: scale(0.95);
+}
+
+.converterParaoctal {
+  background: #120d17;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #070708;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.converterParaoctal .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #0b0a0b;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.converterParaoctal:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.converterParaoctal.icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #080808;
+}
+
+.converterParaoctal:hover .icon svg {
+  transform: translateX(0.05em);
+}
+
+.converterParaoctal:active .icon {
+  transform: scale(0.95);
+}
+
+.converterParaBinario {
+  background: #120d17;
+  color:white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #070708;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.converterParaBinario .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #0b0a0b;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.converterParaBinario:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.converterParaBinario.icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #18161b;
+}
+
+.converterParaBinario:hover .icon svg {
+  transform: translateX(0.05em);
+}
+
+.converterParaBinario:active .icon {
+  transform: scale(0.95);
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.input-wrapper input {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 13em;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: lightcoral;
+}
