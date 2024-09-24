@@ -23,6 +23,10 @@ html {
     /* Inclui padding e bordas no cálculo da largura/altura */
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Configura o fundo visual com gradientes cônicos */
 .div_cor_fundo {
     --s: 200px;
@@ -84,6 +88,11 @@ html {
     margin: 0;
     /* Remove margens do título */
 }
+.select-container {
+  position: relative;
+  width: 200px; /* Ajuste conforme necessário */
+}
+
 
 /* Estilo das opções de navegação laterais */
 .sidebar-options {
@@ -154,7 +163,7 @@ html {
     /* Fundo branco */
     border: 1px solid #ddd;
     /* Borda cinza clara */
-    border-radius: 5px;
+    border-radius: 9px;
     /* Bordas arredondadas */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     /* Sombra leve */
@@ -169,17 +178,37 @@ html {
     margin-right: 100px;
     /* Adiciona espaçamento à direita */
 }
+.card_soma{
+  background-color: white;
+  /* Fundo branco */
+  border: 1px solid #ddd;
+  /* Borda cinza clara */
+  border-radius: 9px;
+  /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra leve */
+  padding: 70px;
+  /* Espaçamento interno dos cards */
+  width: 100%;
+  /* Largura dos cards */
+  text-align: center;
+  /* Centraliza o texto */
+  margin-bottom: 28px;
+  /* Espaçamento inferior entre os cards */
+  margin-right: 100px;
+  /* Adiciona espaçamento à direita */
+}
 
 /* Estilo adicional para outra classe de card */
 .div_card {
     background-color: white;/* Fundo branco */
     border: 1px solid #ddd;/* Borda cinza clara */
-    border-radius: 5px;/* Bordas arredondadas */
+    border-radius: 9px;/* Bordas arredondadas */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);/* Sombra leve */
-    padding: 40px;/* Espaçamento interno */
+    padding: 50px;/* Espaçamento interno */
     width: 80%;/* Largura dos cards */
     text-align: center; /* Centraliza o texto */
-    margin-bottom: -9px; /* Espaçamento inferior */
+    margin-bottom: 28px; /* Espaçamento inferior */
     margin-right: 100px; /* Espaçamento à direita */
 }
 
@@ -205,8 +234,8 @@ html {
 
 /* Estilo do rodapé */
 #rodape {
-    background-color: #ffffff; /* Fundo branco */
-    color: #333; /* Cor do texto */
+    background-color: #333; /* Fundo branco */
+    color: #ffffff; /* Cor do texto */
     text-align: center;/* Centraliza o texto no rodapé */
     padding: 20px 0;
     /* Espaçamento interno vertical */
@@ -221,6 +250,126 @@ html {
   .ui-btn {
     display: flex;
     gap: 16px; /* Espaçamento entre os botões */
+}
+.input-select-container {
+  display: flex; /* Usa Flexbox para alinhar os elementos na mesma linha */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  gap: 10px; /* Espaçamento entre os elementos (ajuste conforme necessário) */
+}
+
+/* Estilizando o select */
+select {
+  appearance: none; /* Remove o estilo padrão do select */
+  width: 80%;
+  padding: 10px;
+  font-size: 13px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Adiciona um ícone personalizado de seta para o select */
+select::-ms-expand {
+  display: none; /* Remove a seta padrão do IE */
+}
+
+.select-container::after {
+  content: '▼';
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #333;
+  pointer-events: none;
+}
+
+/* Estilizando o hover e o foco */
+select:hover, select:focus {
+  border-color: #333;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 300;
+  font-size: .8vw;
+  color: #363636;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .10vw transparent;
+  border-radius: 0.2vw;
+  border: none;
+  outline: none;
+  padding: 0.6vw;
+  max-width: 190px;
+  transition: .4s;
+}
+
+input:hover {
+  box-shadow: 0 0 0 .15vw rgba(10, 14, 15, 0.486);
+}
+
+
+.cssbuttons-io-button {
+  background: #333;
+  color: white;
+  font-family: inherit;
+  padding: 5px; /* Reduzido */
+  padding-left: 0.8em; /* Reduzido */
+  font-size: 15px; /* Reduzido */
+  font-weight: 500;
+  border-radius: 0.6em; /* Reduzido */
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.2em -0.4em #000000; /* Reduzido */
+  overflow: hidden;
+  position: relative;
+  height: 2.2em; /* Reduzido */
+  padding-right: 2.5em; /* Reduzido */
+  cursor: pointer;
+  width: 150px; /* Reduzido */
+  top: 10px;
+  left: 146px;
+  
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 0.8em; /* Reduzido */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8em; /* Reduzido */
+  width: 1.8em; /* Reduzido */
+  border-radius: 0.6em; /* Reduzido */
+  box-shadow: 0.1em 0.1em 0.4em 0.2em #000000; /* Reduzido */
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1em; /* Reduzido */
+  transition: transform 0.3s;
+  color: #000000;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
 
 .ui-btn {

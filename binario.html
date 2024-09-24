@@ -17,11 +17,13 @@
                 <a class="ui-btn" href="index.html"><span>Decimal</span></a>
                 <a class="ui-btn" href="octal.html"><span>Octal</span></a>
             </div>
-        
-            <h1 class="h1_titulo">Conversor Machine</h1>
-        
+
+            <a href="index.html">
+                <h1 class="h1_titulo">Conversor Machine</h1>
+            </a>
+
             <div class="ui-btn-container">
-                <a class="ui-btn" href="binario.html"><span>Binário</span></a>
+
                 <a class="ui-btn" href="hexadecimal.html"><span>Hexadecimal</span></a>
             </div>
         </nav>
@@ -36,45 +38,99 @@
             <div class="converter-section">
                 <div class="div_card">
                     <h2> Binário para decimal </h2>
-                    <input id="id_binário_para_decimal" type="text" placeholder="Digite o valor em decimal">
+                    <input id="id_binário_para_decimal" type="text" placeholder="Digite o valor em decimal"><br>
                     <div id="div_exibir_decimal" style="display:none;"></div>
-                    <button onclick="converterParaBinario()">Converter</button>
+                    <button class="cssbuttons-io-button" onclick="converterParaBinario();">
+                        Converter
+                                <div class="icon">
+                                  <svg
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </button>
                 </div>
 
-                <br><br>
+              
+                
 
                 <div class="div_card">
                     <h2> Binário para octal</h2>
-                    <input id="id_binário_para_octal" type="text" placeholder="Digite o valor em decimal">
+                    <input id="id_binário_para_octal" type="text" placeholder="Digite o valor em decimal"><br>
                     <div id="div_exibir_octal" style="display:none;"></div>
-                    <button onclick="converterParaOctal()">Converter</button>
+                    <button class="cssbuttons-io-button" onclick="converterParaOctal();">
+                        Converter
+                                <div class="icon">
+                                  <svg
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </button>
                 </div>
 
-                <br><br>
+            
 
                 <div class="div_card">
                     <h2> Binário para hexadecimal</h2>
-                    <input id="id_binário_para_hexa" type="text" placeholder="Digite o valor em decimal">
+                    <input id="id_binário_para_hexa" type="text" placeholder="Digite o valor em decimal"><br>
                     <div id="div_exibir_hexa" style="display:none;"></div>
-                    <button onclick="converterParaHexa()">Converter</button>
+                    <button class="cssbuttons-io-button" onclick="converterParaHexa();">
+                        Converter
+                                <div class="icon">
+                                  <svg
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </button>
                 </div>
+               
             </div>
+
 
             <!-- Coluna da direita: Explicações -->
             <div class="explanation-section">
                 <div class="card">
                     <h2>Como funciona a conversão binária</h2>
-                    <p>A conversão de decimal para binário é feita dividindo o número por 2 repetidamente. Os restos obtidos, lidos de baixo para cima, formam o número binário.</p>
+                    <p>A conversão de decimal para binário é feita dividindo o número por 2 repetidamente. Os restos
+                        obtidos, lidos de baixo para cima, formam o número binário.</p>
                 </div>
-            
+
                 <div class="card">
                     <h2>Como funciona a conversão octal</h2>
-                    <p>A conversão de decimal para octal é realizada dividindo o número por 8. Os restos obtidos, lidos de baixo para cima, formam o número octal.</p>
+                    <p>A conversão de decimal para octal é realizada dividindo o número por 8. Os restos obtidos, lidos
+                        de baixo para cima, formam o número octal.</p>
                 </div>
-            
+
                 <div class="card">
                     <h2>Como funciona a conversão hexadecimal</h2>
-                    <p>A conversão de decimal para hexadecimal usa a base 16. Os números são representados com dígitos de 0 a 9 e letras de A a F, com cada dígito representando um valor de 0 a 15.</p>
+                    <p>A conversão de decimal para hexadecimal usa a base 16. Os números são representados com dígitos
+                        de 0 a 9 e letras de A a F, com cada dígito representando um valor de 0 a 15.</p>
                 </div>
             </div>
         </div>

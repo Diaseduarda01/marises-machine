@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Bases</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="div_cor_fundo">
+        <nav id="nav_navegador">
+            <div class="ui-btn-container">
+                <a class="ui-btn" href="index.html"><span>Decimal</span></a>
+                <a class="ui-btn" href="octal.html"><span>Octal</span></a>
+            </div>
+        
+            <a href="index.html"><h1 class="h1_titulo">Conversor Machine</h1></a>
+        
+            <div class="ui-btn-container">
+                <a class="ui-btn" href="binario.html"><span>Binário</span></a>
+                <a class="ui-btn" href="hexadecimal.html"><span>Hexadecimal</span></a>
+            </div>
+        </nav>
+        
+        <div class="txt">
+
+            <h1>Binário é o caminho da luz</h1>
+            
+        </div>
+        <div class="main-container">
+
+            <!-- Coluna da esquerda: Cards de conversão -->
+            <div class="converter-section">
+                <div class="div_card">
+                    <h2>Soma</h2>
+                    <!-- Primeira seleção de base -->
+                    <div class="input-select-container">
+                    <select id="base1_soma">
+                        <option value="2">Binário</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    <input id="valor1_soma" type="text" placeholder="Digite o primeiro valor"><br>
+                </div>
+                <br>
+                    <!-- Segunda seleção de base -->
+                    <div class="input-select-container">
+                    <select id="base2_soma">
+                        <option value="2">Binário</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    <input id="valor2_soma" type="text" placeholder="Digite o segundo valor"><br>
+                </div>
+                
+                    <!-- Seleção de base para o resultado -->
+                    <div class="select-container">
+                    <select id="base_resultado_soma">
+                        <option value="2">Binário</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    </div>
+                <br>
+                    <!-- Exibir resultado -->
+                    <div id="div_exibir_resultado_soma" style="display:none;"></div>
+                    <button class="cssbuttons-io-button" onclick="realizarSoma();">
+                        Somar
+                                <div class="icon">
+                                  <svg
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </button>
+                </div>
+                
+                <br><br>
+                
+                <div class="div_card">
+                    <h2>Subtração</h2>
+                    <!-- Primeira seleção de base -->
+                    <div class="input-select-container">
+                    <select id="base1_subtracao">
+                        <option value="2">Binário</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    <input id="valor1_subtracao" type="text" placeholder="Digite o primeiro valor"><br>
+                    </div>
+                <br>
+                    <!-- Segunda seleção de base -->
+                    <div class="input-select-container">
+                    <select id="base2_subtracao">
+                        <option value="2">Binário</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    <input id="valor2_subtracao" type="text" placeholder="Digite o segundo valor"><br>
+                    </div>
+                
+                    <!-- Seleção de base para o resultado -->
+                    <div class="select-container">
+                    <select id="base_resultado_subtracao">
+                        <option value="2">Binário</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    </div>
+                <br>
+                    <!-- Exibir resultado -->
+                    <div id="div_exibir_resultado_subtracao" style="display:none;"></div>
+                    <button class="cssbuttons-io-button" onclick="realizarSubtracao();">
+                        Subtrair
+                                <div class="icon">
+                                  <svg
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </button>
+                </div>
+                
+            </div>
+
+            <!-- Coluna da direita: Explicações -->
+            <div class="explanation-section">
+                <div class="card_soma">
+                    <h2>Soma e Subtração</h2>
+                    <p>Para realizar a soma e subtração em diferentes bases, os números devem ser convertidos para a mesma base. 
+                       A seguir estão os passos básicos:</p>
+                    <ul>
+                        <li><strong>Binário:</strong> Use apenas os dígitos 0 e 1. Some ou subtraia bit a bit, levando em conta o transporte.</li>
+                        <li><strong>Octal:</strong> Use os dígitos de 0 a 7. A soma e a subtração são feitas como no decimal, mas com transporte a cada 8.</li>
+                        <li><strong>Decimal:</strong> Utilize os dígitos de 0 a 9. A soma e a subtração são feitas normalmente.</li>
+                        <li><strong>Hexadecimal:</strong> Use os dígitos de 0 a 9 e A a F. Some ou subtraia em base 16, com transporte a cada 16.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="rodape">
+        <p>&copy; 2024 - Maria Eduarda Dias e Ana Karoline. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
+<script src="main.js"></script>
